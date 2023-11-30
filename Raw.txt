@@ -1,0 +1,95 @@
+1	Row ID	        A unique identifier for each transaction.
+2	Order ID	    A unique identifier for each order.
+3	Order Date	    The date when the order was placed.
+4	Date Key	    A numerical representation of the order date (YYYYMMDD).
+5	Contact Name	The name of the person who placed the order.
+6	Country	        The country where the order was placed.
+7	City	        The city where the order was placed.
+8	Region	        The region where the order was placed.
+9	Subregion	    The subregion where the order was placed.
+10	Customer	    The name of the company that placed the order.
+11	Customer ID	    A unique identifier for each customer.
+13	Industry	    The industry the customer belongs to.
+14	Segment	        The customer segment (SMB, Strategic, Enterprise, etc.).
+15	Product	        The product was ordered.
+16	License	        The license key for the product.
+17	Sales	        The total sales amount for the transaction.
+18	Quantity	    The total number of items in the transaction.
+19	Discount	    The discount applied to the transaction.
+20	Profit	        The profit from the transaction.
+
+
+Source data:
+https://www.kaggle.com/datasets/7750efed2f8651cf0e0ac9d161d36b9916dada803898bb585dbf67b6bd9d8c23
+
+https://ee-assets-prod-us-east-1.s3.amazonaws.com/modules/337d5d05acc64a6fa37bcba6b921071c/v1/SaaS-Sales.csv
+
+CRISP-DM: 
+[OBJECTIVES]
+- Business Understanding
+    Understand and leverage insights from the SaaS sales data to optimize revenue, enhance customer experience, and inform strategic decision-making.
+- Data Understanding
+    Explore and understand the dataset.
+- Data Preparation
+    Prepare the data for modeling.
+- Modelling
+    Build a model to address the business problem.
+- Evaluation
+    Assess the model's performance and reliability.
+- Deployment
+    Implement the model in a production environment.
+- Iteration
+    Iterate on the process as needed for continuous improvement.
+
+[TASK]
+1.  Business Understanding
+    - Customer Segmentation for Targeted Marketing:
+        Leverage 'Industry' and 'Segment' features for targeted marketing strategies based on unique customer preferences.
+    - Profitability Analysis across Regions and Subregions:
+        Analyze 'Profit' to identify lucrative markets and allocate resources strategically for maximum profitability.
+    - Time-Based Sales Trends and Seasonal Insights:
+        Utilize 'Order Date' and 'Date Key' to identify time-based trends, optimizing marketing campaigns and inventory.
+    - Customer Retention Strategies:
+        Analyze historical data to identify customer churn factors and implement personalized retention strategies.
+    - Product Performance and Cross-Selling Opportunities:
+        Evaluate product performance based on 'Sales' and 'Quantity' and identify cross-selling opportunities.
+    - Discount Impact on Sales and Profitability:
+        Assess the impact of 'Discount' on 'Sales' and 'Profit' for optimal discount strategies.
+    - Customer Relationship Management (CRM):
+        Utilize 'Customer ID' and 'Contact Name' for improved CRM and personalized customer engagement.
+    - Predictive Sales Modeling:
+        Implement predictive modeling for sales forecasting, informing proactive inventory management and resource allocation.
+    - Market Expansion Opportunities:
+        Explore untapped markets using 'Country' and 'Industry' features, developing targeted expansion plans.
+    - Strategic Decision Support:
+        Provide decision-makers with actionable insights for strategic decisions, enhancing overall business agility.
+2.  Data Understanding
+    - Load the dataset and examine its structure.
+    - Identify key variables, their data types, and potential relationships.
+    - Explore summary statistics, detect outliers, and understand the distribution of key features.
+    - Visualize relationships between variables through plots and charts.
+    - Identify any missing or inconsistent data.
+3.  Data Preparation
+    - Handle missing values, outliers, and duplicates as needed.
+    - Convert 'Order Date' to datetime format for time-based analysis.
+    - Select relevant features for modeling (e.g., 'Date Key', 'Customer ID', 'Sales', 'Quantity', 'Discount', 'Profit').
+    - Encode categorical variables if required.
+    - Split the data into training and testing sets.
+4.  Modelling
+    - Choose an appropriate model based on the nature of the problem (e.g., linear regression for sales prediction).
+    - Train the model using the training dataset.
+    - Evaluate the model's performance using the testing dataset.
+    - Consider other models or parameter tuning if necessary.
+5.  Evaluation
+    - Evaluate model performance metrics (e.g., Mean Squared Error for regression).
+    - Compare model results against business objectives and KPIs.
+    - Seek feedback from stakeholders and consider any adjustments or improvements.
+6.  Deployment
+    - Plan the deployment strategy and timeline.
+    - Implement the model code in a production environment.
+    - Establish monitoring procedures for ongoing model performance.
+    - Communicate results and findings to relevant stakeholders.
+7.  Iteration
+    - Review the entire process and identify areas for improvement.
+    - Consider additional data sources or features for enhanced modeling.
+    - Iterate on the model or analysis based on feedback and changing business requirements.
